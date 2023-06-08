@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "340006158721",
+    "project_id": "wetrack-938f4",
+    "storage_bucket": "wetrack-938f4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:340006158721:android:0eba1c1c11893079c76880",
+        "android_client_info": {
+          "package_name": "com.rushikeshsantoshv.wetrack"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "340006158721-l6ojqvn8dq7pk649j4b0u7qkfp39t1na.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyArxrFnP1yFF6D_lQKD5xR4Gas6yvqFW_M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "340006158721-l6ojqvn8dq7pk649j4b0u7qkfp39t1na.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

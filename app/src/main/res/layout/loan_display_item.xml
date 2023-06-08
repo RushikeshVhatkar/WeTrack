@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/loan_dis_mainlay"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/emp_payment_mainlay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="2dp"
+        app:cardUseCompatPadding="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#FDFDFD"
+            android:padding="10dp">
+
+            <LinearLayout
+                android:id="@+id/loan_dis_datelay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:background="@drawable/mini_curve_border"
+                android:backgroundTint="#9C27B0"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingHorizontal="7dp"
+                android:paddingVertical="5dp">
+
+                <TextView
+                    android:id="@+id/loan_dis_day_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:includeFontPadding="false"
+                    android:paddingHorizontal="5dp"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/loan_dis_month_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins"
+                    android:includeFontPadding="false"
+                    android:paddingHorizontal="5dp"
+                    android:textColor="@color/white"
+                    android:textSize="10sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/loan_dis_contentlay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/loan_dis_datelay"
+                android:layout_toStartOf="@+id/loan_dis_finalpaylay"
+                android:layout_marginStart="10dp">
+
+                <TextView
+                    android:id="@+id/loan_dis_loan_balance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingHorizontal="5dp"
+                    android:includeFontPadding="false"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"
+                    android:fontFamily="@font/poppins_semibold"
+                    tools:ignore="HardcodedText,SmallSp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="5dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Loan Paid"
+                            android:paddingHorizontal="5dp"
+                            android:includeFontPadding="false"
+                            android:textSize="10sp"
+                            android:layout_gravity="center"
+                            android:fontFamily="@font/poppins"
+                            tools:ignore="HardcodedText,SmallSp"/>
+
+                        <ImageView
+                            android:id="@+id/loan_dis_loanpaid_option"
+                            android:layout_width="17dp"
+                            android:layout_height="17dp"
+                            android:padding="2dp"
+                            android:includeFontPadding="false"
+                            android:textColor="@color/black"
+                            android:textSize="10sp"
+                            android:fontFamily="@font/poppins"
+                            tools:ignore="HardcodedText,SmallSp"/>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="5dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Loan Taken"
+                            android:paddingHorizontal="5dp"
+                            android:includeFontPadding="false"
+                            android:textSize="10sp"
+                            android:layout_gravity="center"
+                            android:fontFamily="@font/poppins"
+                            tools:ignore="HardcodedText,SmallSp"/>
+
+                        <ImageView
+                            android:id="@+id/loan_dis_loantaken_option"
+                            android:layout_width="17dp"
+                            android:layout_height="match_parent"
+                            android:fontFamily="@font/poppins"
+                            android:includeFontPadding="false"
+                            android:padding="2dp"
+                            android:textColor="@color/black"
+                            android:textSize="10sp"
+                            tools:ignore="HardcodedText,SmallSp" />
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Financial Year"
+                        android:paddingHorizontal="5dp"
+                        android:includeFontPadding="false"
+                        android:textSize="10sp"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/poppins"
+                        tools:ignore="HardcodedText,SmallSp"/>
+
+                    <TextView
+                        android:id="@+id/loan_dis_year_txt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/little_curve_border"
+                        android:backgroundTint="#9C27B0"
+                        android:paddingVertical="2dp"
+                        android:textColor="@color/white"
+                        android:paddingHorizontal="10dp"
+                        android:includeFontPadding="false"
+                        android:textSize="10sp"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/poppins"
+                        tools:ignore="HardcodedText,SmallSp"/>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+           <LinearLayout
+               android:id="@+id/loan_dis_finalpaylay"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:orientation="vertical"
+               android:layout_marginStart="10dp"
+               android:layout_centerVertical="true"
+               android:layout_alignParentEnd="true">
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Loan Amount"
+                   android:textSize="10sp"
+                   android:fontFamily="@font/poppins"
+                   android:textColor="@color/black"/>
+
+               <LinearLayout
+
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:orientation="horizontal"
+                   android:gravity="center"
+                   android:layout_gravity="center">
+
+                   <TextView
+                       android:id="@+id/loan_dis_loan_amt_txt"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:paddingHorizontal="5dp"
+                       android:textSize="12sp"
+                       android:includeFontPadding="false"
+                       android:fontFamily="@font/poppins_semibold"
+                       tools:ignore="HardcodedText" />
+
+                   <ImageView
+                       android:id="@+id/loan_dis_loan_status_icon"
+                       android:layout_width="17dp"
+                       android:layout_height="17dp" />
+
+               </LinearLayout>
+
+           </LinearLayout>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

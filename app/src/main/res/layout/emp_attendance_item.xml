@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout class="androidx.appcompat.app.AlertController$RecycleListView" xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/workeritem_mainlay"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/mini_curve_border"
+    android:backgroundTint="@color/transparent"
+    android:padding="5dp">
+
+    <LinearLayout
+        android:id="@+id/workeritem_textlay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_toStartOf="@+id/workeritem_datalay"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="10dp">
+
+        <TextView
+            android:id="@+id/workeritem_wname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/light_black"
+            android:fontFamily="@font/poppins_semibold" />
+
+        <TextView
+            android:id="@+id/workeritem_wcontactno"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_light"
+            android:textSize="12sp"
+            android:layout_marginTop="5dp" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/workeritem_datalay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true">
+
+        <LinearLayout
+            android:id="@+id/empitem_completed_lay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/emp_attendance_present_tv"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:text="P"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:background="@drawable/mini_curve_border"
+                android:backgroundTint="@color/my_green"/>
+
+            <TextView
+                android:id="@+id/emp_attendance_halfday_tv"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:text="H D"
+                android:layout_marginStart="10dp"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:background="@drawable/mini_curve_border"
+                android:backgroundTint="@color/my_yellow"/>
+
+            <TextView
+                android:id="@+id/emp_attendance_absent_tv"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:text="A"
+                android:layout_marginStart="10dp"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:background="@drawable/mini_curve_border"
+                android:backgroundTint="@color/my_red"/>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/emp_attendance_grouplay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+
+            <RadioGroup
+                android:id="@+id/emp_attendance_radiogroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                tools:ignore="UselessParent">
+
+                <RadioButton
+                    android:id="@+id/emp_attendance_present"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:background="@drawable/custom_present_selector"
+                    android:button="@android:color/transparent"
+                    android:checked="true"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="P"
+                    android:drawableTint="@color/white"
+                    android:textAlignment="center"
+                    android:textColor="@color/white" />
+
+                <RadioButton
+                    android:id="@+id/emp_attendance_half"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_marginStart="10dp"
+                    android:background="@drawable/custom_halfday_selector"
+                    android:button="@android:color/transparent"
+                    android:checked="false"
+                    android:drawableTint="@color/white"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="H D"
+                    android:textAlignment="center"
+                    android:textColor="@color/white" />
+
+                <!--            android:drawableStart="@drawable/ic_check"-->
+
+                <RadioButton
+                    android:id="@+id/emp_attendance_absent"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_marginStart="10dp"
+                    android:background="@drawable/custom_absent_selector"
+                    android:button="@android:color/transparent"
+                    android:checked="false"
+                    android:drawableTint="@color/white"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="A"
+                    android:textAlignment="center"
+                    android:textColor="@color/white" />
+
+            </RadioGroup>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <com.google.android.material.divider.MaterialDivider
+        android:id="@+id/workeritem_divider"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@+id/workeritem_textlay"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/curve_border"
+        android:backgroundTint="#FAFAFA"/>
+
+</RelativeLayout>

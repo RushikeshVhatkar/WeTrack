@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingHorizontal="20dp"
+    android:id="@+id/feedback_mainlay"
+    tools:context=".Activities.FeedbackActivity">
+
+    <ImageButton
+        android:id="@+id/feedback_back_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_gravity="end"
+        android:layout_marginTop="10dp"
+        android:background="@color/transparent"
+        android:padding="10dp"
+        android:src="@drawable/ic_close"
+        app:tint="#888888" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/feedback_back_btn"
+        android:layout_above="@+id/feedback_submit_btn">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginVertical="10dp">
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/feedback_anim"
+                android:layout_width="250dp"
+                android:layout_height="250dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                app:lottie_autoPlay="true"
+                app:lottie_loop="true"
+                app:lottie_rawRes="@raw/feedback_anim"
+                app:lottie_repeatCount="100"
+                app:lottie_speed="1" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Help Us improve"
+                android:fontFamily="@font/poppins_semibold"
+                android:layout_gravity="center"
+                android:layout_marginTop="-20dp"
+                android:textSize="15sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Please give your honest feedback about the app. You can also write about your doubts and issues about the app and its features."
+                android:fontFamily="@font/poppins_light"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"
+                android:textAlignment="center"
+                android:textSize="12sp"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/feedback_message"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                app:boxStrokeColor="@color/maincolor"
+                app:boxStrokeWidth="0.5dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins"
+                    android:hint="Your Feedback Here"
+                    android:inputType="textMultiLine"
+                    android:gravity="left|top"
+                    android:lineSpacingExtra="2dp"
+                    android:maxLines="7"
+                    android:lines="7" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:id="@+id/feedback_message_limit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:fontFamily="@font/poppins_semibold"
+                android:layout_gravity="end"
+                android:layout_marginTop="5dp"/>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <TextView
+        android:id="@+id/feedback_submit_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/mini_curve_border"
+        android:backgroundTint="@color/maincolor"
+        android:fontFamily="@font/poppins_semibold"
+        android:paddingVertical="5dp"
+        android:text="Submit"
+        android:textAlignment="center"
+        android:textColor="@color/white" />
+
+</RelativeLayout>

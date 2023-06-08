@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/upfrag_mainlay"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingHorizontal="20dp"
+    tools:context=".Fragments.UpdatePhoneFragment">
+
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/wetrack_transp_icon" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Update your Phone Number"
+        android:fontFamily="@font/poppins_semibold"
+        android:textColor="@color/black"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Please enter your desired new phone number which you want to update to. After entering, please continue to next page and enter the OTP send to that number. After verifying that Phone Number and OTP, your account will be updated with new phone number successfully."
+        android:fontFamily="@font/poppins"
+        android:justificationMode="inter_word"
+        android:textSize="12sp"
+        android:layout_marginTop="10dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+        <com.hbb20.CountryCodePicker
+            android:id="@+id/upfrag_ccpicker"
+            android:layout_width="wrap_content"
+            android:layout_height="61dp"
+            android:gravity="center"
+            android:layout_alignBottom="@+id/upfrag_phonenum"
+            android:background="@drawable/curved_stroke_bg"
+            android:foreground="?attr/selectableItemBackground"
+            app:ccpDialog_textColor="@color/black"
+            app:ccp_contentColor="@color/black"
+            app:ccp_defaultPhoneCode="91"
+            app:ccp_flagBorderColor="@android:color/transparent"
+            app:ccp_showFlag="false"
+            app:ccp_showNameCode="false" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/upfrag_phonenum"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@+id/upfrag_ccpicker"
+            app:boxStrokeColor="@color/maincolor">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/poppins"
+                android:hint="New Phone Number"
+                android:inputType="phone"
+                android:maxLength="10" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </RelativeLayout>
+
+
+    <ImageButton
+        android:id="@+id/upfrag_proceed_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/circle_shape"
+        android:backgroundTint="#DADADA"
+        android:enabled="false"
+        android:foreground="?attr/selectableItemBackground"
+        android:padding="15dp"
+        android:src="@drawable/ic_arrow_right" />
+
+</LinearLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/menu_home"
+        android:icon="@drawable/ic_home"
+        android:title="Home" />
+
+    <!-- TODO: Remove this comment after implementing the sticky notes -->
+    <!--<item
+        android:id="@+id/menu_stickynotes"
+        android:icon="@drawable/ic_sticky_notes_2"
+        android:title="Sticky Notes" /> -->
+</menu>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="#7A000000"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".Activities.AddHolidaysActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:background="@drawable/curve_border"
+        android:backgroundTint="@color/white"
+        android:elevation="10dp"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <!--<CalendarView
+            android:id="@+id/add_holi_calenderview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />-->
+
+        <com.prolificinteractive.materialcalendarview.MaterialCalendarView
+            android:id="@+id/add_holi_calenderview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:mcv_selectionColor="#00F"
+            app:mcv_showOtherDates="all" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <TextView
+                android:id="@+id/add_holi_cancel_btn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginBottom="5dp"
+                android:layout_weight="1"
+                android:foreground="?attr/selectableItemBackground"
+                android:background="@drawable/mini_curve_border"
+                android:backgroundTint="@color/my_red"
+                android:fontFamily="@font/poppins"
+                android:padding="10dp"
+                android:text="Cancel"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/add_holi_adddates_btn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginBottom="5dp"
+                android:layout_weight="1"
+                android:foreground="?attr/selectableItemBackground"
+                android:background="@drawable/mini_curve_border"
+                android:backgroundTint="@color/maincolor"
+                android:fontFamily="@font/poppins"
+                android:padding="10dp"
+                android:text="Add Dates"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

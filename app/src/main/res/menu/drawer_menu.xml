@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <item android:title="Application Options">
+        <menu>
+            <group android:checkableBehavior="single">
+<!--
+                <item
+                    android:id="@+id/drawer_settings"
+                    android:icon="@drawable/ic_settings"
+                    android:title="Settings" />
+-->
+
+                <item
+                    android:id="@+id/drawer_aboutus"
+                    android:icon="@drawable/ic_phone"
+                    android:title="About Us" />
+
+
+                <item
+                    android:id="@+id/drawer_contactus"
+                    android:icon="@drawable/ic_phone"
+                    android:title="Contact Us" />
+
+            </group>
+        </menu>
+    </item>
+
+    <item android:title="Communications Options">
+        <menu>
+            <item
+                android:id="@+id/drawer_rate"
+                android:icon="@drawable/ic_star_rate"
+                android:title="Rate The App" />
+
+            <item
+                android:id="@+id/drawer_share_app"
+                android:icon="@drawable/ic_share"
+                android:title="Share With Friends" />
+
+            <item
+                android:id="@+id/drawer_privacy"
+                android:icon="@drawable/ic_privacy"
+                android:title="Privacy And Policy" />
+
+            <item
+                android:id="@+id/drawer_terms_and_conditions"
+                android:icon="@drawable/ic_info"
+                android:title="Terms And Conditions" />
+
+        </menu>
+    </item>
+
+    <item android:title="Account Credentials Options">
+        <menu>
+            <item
+                android:id="@+id/drawer_logout"
+                android:icon="@drawable/ic_power_off"
+                android:title="Logout" />
+        </menu>
+    </item>
+
+</menu>

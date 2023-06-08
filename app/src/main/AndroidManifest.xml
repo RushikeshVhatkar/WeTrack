@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.rushikeshsantoshv.wetrack">
+
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" tools:ignore="ScopedStorage" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:smallScreens="true"
+        android:xlargeScreens="true" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.WeTrack"
+        tools:targetApi="31">
+        <activity
+            android:name=".Activities.EmpViewAttendancesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.ViewHolidaysActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.UpdatePhoneNumberActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.FaqActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.PrivacyPolicyTermsConditionsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.FeedbackActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.ContactUsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.EditCompanyProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.EmployeeAnalysisActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.AnnualReportActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.AddHolidaysActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.ManagerProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.ManagersListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.ViewPaymentsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.EmployeeProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.MakePaymentsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.MarkAttendancesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.EmployeesListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.AboutUsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.AppSettingsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.CompanyDetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.PersonalInfoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.SelectUserActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.SigninActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.SplashScreen"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Activities.HomeActivity"
+            android:exported="false" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+        <service
+            android:name=".DataModels.ExampleJobService"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyBLbeDsCYRqptz-n4ra9CR26UNV0OqK4dk" />
+    </application>
+
+</manifest>

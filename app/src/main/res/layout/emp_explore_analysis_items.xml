@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:paddingHorizontal="10dp">
+
+        <TextView
+            android:id="@+id/eeai_emp_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toStartOf="@+id/eeai_ratingbar"
+            android:text="Employee Name"
+            android:textColor="@color/black" />
+
+        <RatingBar
+            android:id="@+id/eeai_ratingbar"
+            style="@style/Widget.AppCompat.RatingBar.Small"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:progressTint="@color/my_yellow"
+            android:background="@drawable/circle_shape"
+            android:backgroundTint="#FBFBFB"
+            android:clickable="false"
+            android:numStars="5"
+            android:rating="3"
+            android:paddingHorizontal="10dp"
+            android:paddingVertical="5dp" />
+
+    </RelativeLayout>
+
+</LinearLayout>
